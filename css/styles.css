@@ -1,0 +1,355 @@
+/* Палітра кольорів */
+/* main text color -  #555555;
+secondary text color - #9DA4BD;
+title color - #303030;
+accent color - #FF6C00
+background-color: #FFFFFF*/
+
+:root {
+  --text-color: #555555;
+  --secondary-text-color: #9da4bd;
+  --title-color: #303030;
+  --accent-color: #ff6c00;
+  --background-color: #ffffff;
+  --secondary-background-color: #f7f7f7;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Open Sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  letter-spacing: 0.02em;
+}
+
+li {
+  list-style: none;
+}
+
+.link {
+  color: currentColor;
+  text-decoration: none;
+}
+
+/* Стилізація хедеру */
+
+.header {
+  background-color: #191c26;
+}
+
+.nav-list-item,
+.tlf {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--background-color);
+}
+
+.nav-list-item:hover,
+.nav-list-item:focus {
+  color: var(--accent-color);
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+.header-btn {
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.online-btn:hover, .online-btn:focus {
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+/* Стилізація мейну */
+/* Герой */
+
+.hero-section {
+  background-color: #191c26;
+}
+
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--title-color);
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-color);
+}
+
+.hero-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 85px;
+  letter-spacing: 0.05em;
+
+  color: var(--background-color);
+}
+
+.hero-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color);
+}
+
+.hero-controls {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+
+  color: rgba(157, 164, 189, 0.6);
+}
+
+/* Секція ПРО НАС */
+
+.about-paragraph {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--title-color);
+}
+
+.about-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  color: #303030;
+}
+
+.about-subtitle {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color);
+}
+
+.about-btn {
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: var(--title-color);
+  background-color: transparent;
+}
+
+/* Прайс-лист */
+.price-section {
+  background-color: #191c26;
+}
+
+.price-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.price-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+
+  color: var(--background-color);
+}
+
+.price-text {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color);
+}
+
+/* Переваги */
+
+.features-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--title-color);
+}
+
+.features-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  color: var(--title-color);
+}
+
+.features-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color);
+}
+
+/* Нашы майстри */
+.team-section {
+  background-color: var(--secondary-background-color);
+}
+
+.team-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--title-color);
+}
+
+.team-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  color: var(--title-color);
+}
+
+.name {
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+
+  color: var(--title-color);
+}
+
+.position {
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+
+/* Портфоліо */
+
+.portfolio-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--title-color);
+}
+
+/* Контакти */
+.contacts-section {
+  background-color: #191c26;
+}
+
+.contacts-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  color: var(--background-color);
+}
+
+.address-list {
+  font-style: normal;
+}
+
+.address-item {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.address-link {
+  color: var(--secondary-text-color);
+}
+
+.time {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--background-color);
+}
+
+.time-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color);
+}
+
+/* Футер */
+
+.footer-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--secondary-text-color);
+}
