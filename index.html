@@ -16,26 +16,29 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <a href="index.html">
+      <div class="container header-container">
+        <a href="index.html" class="logo">
         <img src="./images/Logo.png" alt="Логотип" width="69" />
       </a>
-      <nav>
+      <nav class="nav">
         <ul class="nav-list">
-          <li class="nav-list-item"><a class="link current" href="#about">О нас</a></li>
-          <li class="nav-list-item"><a class="link" href="#price">Услуги и цены</a></li>
-          <li class="nav-list-item"><a class="link" href="#team">Мастера</a></li>
-          <li class="nav-list-item"><a class="link" href="#contacts">Контакты</a></li>
+          <li class="nav-list-item"><a class="link current nav-link" href="#about">О нас</a></li>
+          <li class="nav-list-item"><a class="link nav-link" href="#price">Услуги и цены</a></li>
+          <li class="nav-list-item"><a class="link nav-link" href="#team">Мастера</a></li>
+          <li class="nav-list-item"><a class="link nav-link" href="#contacts">Контакты</a></li>
         </ul>
       </nav>
       <a class="link tlf" href="tel:+380441111111">+38 044 111 11 11</a>
       <button class="header-btn online-btn" type="button">онлайн-запись</button>
+      </div>
     </header>
 
     <!-- Main -->
     <main>
       <!-- hero section -->
       <section class="hero-section">
-        <ul>
+        <div class="container">
+          <ul>
           <li>
             <a class="link hero-link"
               href="https://instagram.com"
@@ -67,15 +70,17 @@
             <button class="hero-controls" type="button">Вперед</button>
           </li>
         </ul>
+        </div>
       </section>
 
       <!-- About section -->
-      <section id="about">
-        <ul>
-          <li>
+      <section id="about" class="about-section">
+        <div class="container about-container">
+          <ul class="about-list">
+          <li class="about-list-item">
             <img src="./images/img1.jpg" alt="Бритье бороды" width="270" />
           </li>
-          <li>
+          <li class="about-list-item">
             <img
               src="./images/img2.jpg"
               alt="Бритье опасной бритвой"
@@ -83,7 +88,8 @@
             />
           </li>
         </ul>
-        <p class="about-paragraph">О НАС</p>
+        <div class="about-text-container">
+          <p class="about-paragraph">О НАС</p>
         <h2 class="about-title">Лучший Барбершоп твоего города</h2>
         <h3 class="about-subtitle">
           Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
@@ -97,23 +103,26 @@
           приходит!
         </p>
         <button class="about-btn online-btn" type="button">онлайн-запись</button>
+        </div>
+        </div>
       </section>
 
       <!-- Price section -->
       <section class="price-section" id="price">
-        <p class="price-subtitle">Проведи время в компании лучших мастеров</p>
+        <div class="container">
+          <p class="price-subtitle">Проведи время в компании лучших мастеров</p>
         <h2 class="price-title">Услуги и цены</h2>
-        <ul>
-          <li>
-            <ul>
+        <ul class="price-list">
+          <li class="price-list-item">
+            <ul class="price-inner-list">
               <li class="price-text">Мужская стрижка от 300 грн.</li>
               <li class="price-text">Стрижка бороды от 200 грн.</li>
               <li class="price-text">Стрижка усов от 200 грн.</li>
               <li class="price-text">Бритье опасной бритвой от 200 грн.</li>
             </ul>
           </li>
-          <li>
-            <ul>
+          <li class="price-list-item">
+            <ul class="price-inner-list">
               <li class="price-text">Cтрижка у стажера от 50 грн.</li>
               <li class="price-text">Стрижка под насадку от 200 грн.</li>
               <li class="price-text">Детская стрижка (до 12 лет) от 300 грн.</li>
@@ -121,12 +130,14 @@
             </ul>
           </li>
         </ul>
-        <button class="header-btn online-btn" type="button">онлайн-запись</button>
+        <button class="header-btn online-btn price-btn" type="button">онлайн-запись</button>
+        </div>
       </section>
 
       <!-- Features section -->
       <section>
-        <ul>
+        <div class="container">
+          <ul>
           <li>
             <img
               src="./images/features1.png"
@@ -150,11 +161,13 @@
           О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать,
           чем 10 раз прочитать.
         </p>
+        </div>
       </section>
 
       <!-- Team section -->
       <section class="team-section" id="team">
-        <p class="team-subtitle">для настоящих ценителей атмосферы</p>
+        <div class="container">
+          <p class="team-subtitle">для настоящих ценителей атмосферы</p>
         <h2 class="team-title">Наши мастера</h2>
         <ul>
           <li>
@@ -191,11 +204,13 @@
             </ul>
           </li>
         </ul>
+        </div>
       </section>
 
       <!-- Portfolio section -->
       <section>
-        <p class="portfolio-text">На латинском языке “барба” означает “борода”</p>
+        <div class="container">
+          <p class="portfolio-text">На латинском языке “барба” означает “борода”</p>
         <h2 hidden>Портфолио</h2>
         <ul>
           <li><img src="./images/gallery1.jpg" alt="Укладка" width="270" /></li>
@@ -211,11 +226,13 @@
           </li>
           <li><img src="./images/gallery4.jpg" alt="Затылок" width="270" /></li>
         </ul>
+        </div>
       </section>
 
       <!-- Contacts section -->
       <section class="contacts-section" id="contacts">
-        <h2 class="contacts-title">Контакты</h2>
+        <div class="container">
+          <h2 class="contacts-title">Контакты</h2>
         <address>
           <ul class="address-list">
             <li class="address-item">
@@ -237,12 +254,14 @@
           Ежедневно с <time datetime="09:00">9:00</time> до
           <time datetime="22:00">22:00</time>
         </p>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer>
-      <p class="footer-text">&#169; Copyright 2020</p>
+      <div class="container">
+        <p class="footer-text">&#169; Copyright 2020</p>
       <ul>
         <li>
           <a class="link hero-link"
@@ -261,6 +280,7 @@
           >
         </li>
       </ul>
+      </div>
     </footer>
   </body>
 </html>
