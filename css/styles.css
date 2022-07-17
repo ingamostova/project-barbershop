@@ -170,6 +170,8 @@ img {
 }
 
 .hero-subtitle {
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -178,6 +180,7 @@ img {
 
   color: rgba(157, 164, 189, 0.6);
 }
+
 
 .hero-title {
   font-family: "Raleway";
@@ -231,6 +234,8 @@ img {
 }
 
 .about-paragraph {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
@@ -239,6 +244,18 @@ img {
   text-transform: uppercase;
 
   color: var(--title-color);
+}
+
+.about-paragraph::before,
+.features-subtitle::before,
+.team-subtitle::before,
+.portfolio-text::before {
+  margin-right: 20px;
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--title-color);
 }
 
 .about-title {
@@ -294,6 +311,8 @@ img {
 }
 
 .price-subtitle {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
@@ -302,6 +321,16 @@ img {
   text-transform: uppercase;
 
   color: rgba(157, 164, 189, 0.6);
+}
+
+.price-subtitle::before,
+.hero-subtitle::before {
+  margin-right: 20px;
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.6);
 }
 
 .price-title {
@@ -403,6 +432,8 @@ color: var(--title-color);
 }
 
 .features-subtitle {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
@@ -442,6 +473,8 @@ height: 90px;
 }
 
 .team-subtitle {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
@@ -527,6 +560,8 @@ height: 90px;
 /* Портфоліо */
 
 .portfolio-text {
+  display: flex;
+  align-items: center;
   margin-bottom: 44px;
   font-weight: 600;
   font-size: 11px;
@@ -594,6 +629,8 @@ height: 90px;
 }
 
 .address-link {
+  display: flex;
+  align-items: center;
   color: var(--secondary-text-color);
 }
 
@@ -609,6 +646,8 @@ height: 90px;
 }
 
 .time {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
@@ -617,6 +656,15 @@ height: 90px;
   text-transform: uppercase;
 
   color: var(--background-color);
+}
+
+.time::before {
+  margin-right: 20px;
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.4);
 }
 
 .time-text {
@@ -651,6 +699,16 @@ height: 90px;
 
 .footer-list {
   display: flex;
+  align-items: center;
+}
+
+.footer-list::before {
+  margin-right: 40px;
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--title-color);
 }
 
 .footer-list-item:not(:last-child) {
