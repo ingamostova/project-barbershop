@@ -20,9 +20,9 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body data-page>
     <!-- Header -->
-    <header class="header">
+    <header class="header" data-header>
       <div class="container header-container">
         <a href="index.html" class="logo">
           <img src="./images/Logo.png" alt="Логотип" width="69" />
@@ -44,7 +44,7 @@
           </ul>
         </nav>
         <a class="link tlf" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="header-btn online-btn" type="button">
+        <button class="header-btn online-btn" type="button" data-modal-open>
           онлайн-запись
         </button>
       </div>
@@ -54,8 +54,9 @@
     <main>
       <!-- hero section -->
       <section class="hero-section">
-        <div class="container">
-          <ul>
+        <div class="container hero-container">
+          <div class="left-side">
+            <ul>
             <li>
               <a
                 class="link hero-link"
@@ -75,20 +76,28 @@
               >
             </li>
           </ul>
-          <p class="hero-subtitle" lang="en">A hair salon for men in Kyiv</p>
+          </div>
+          <div class="right-side">
+            <p class="hero-subtitle" lang="en">A hair salon for men in Kyiv</p>
           <h1 class="hero-title" lang="en">BarberShop</h1>
           <p class="hero-text">
-            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
+            Мы эксперты в модных мужских стрижках. Работаем&nbsp;быстро, осторожно и
             со вкусом.
           </p>
-          <ul>
+          <div class="pagination">
+            <div class="pagination-item active"></div>
+            <div class="pagination-item"></div>
+            <div class="pagination-item"></div>
+          </div>
+          <ul class="hero-slider">
             <li>
               <button class="hero-controls" type="button">Назад</button>
             </li>
             <li>
-              <button class="hero-controls" type="button">Вперед</button>
+              <button class="hero-controls active" type="button">Вперед</button>
             </li>
           </ul>
+          </div>
         </div>
       </section>
 
@@ -351,8 +360,8 @@
       <!-- Contacts section -->
       <section class="contacts-section section" id="contacts">
         <div class="container contacts-container">
-          <div class="left-side"></div>
-          <div class="right-side">
+          <div class="contacts-left-side"></div>
+          <div class="contacts-right-side">
             <h2 class="contacts-title">Контакты</h2>
             <address class="address">
               <ul class="address-list">
@@ -427,5 +436,21 @@
         </ul>
       </div>
     </footer>
+
+    <!-- Модалка -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/header-scroll.js"></script>
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
