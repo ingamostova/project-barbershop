@@ -372,7 +372,29 @@
       <!-- Contacts section -->
       <section class="contacts-section section" id="contacts">
         <div class="container contacts-container">
-          <div class="contacts-left-side"></div>
+          <div class="contacts-left-side">
+            <h2 class="contacts-title">Онлайн-запись</h2>
+            <form class="contacts-form">
+              <div class="contacts-form-wrap">
+                <div class="contacts-form-group">
+                  <input class="contacts-form-input" type="text" name="user-name" id="name" placeholder="Тарас Коваленко">
+              <label class="contacts-form-label" for="name">Имя*</label>
+                </div>
+
+              <div class="contacts-form-group">
+                <input class="contacts-form-input" type="tel" name="user-phone" id="phone" placeholder="+38 067 232-14-57">
+              <label class="contacts-form-label" for="phone">Телефон*</label>
+              </div>
+              </div>
+
+              <div class="contacts-form-group">
+                <textarea class="contacts-form-message" name="message" id="message" rows="5"></textarea>
+              <label class="contacts-form-label" for="message">сообщение</label>
+              </div>
+
+              <button class="contacts-btn" type="submit">отправить</button>
+            </form>
+          </div>
           <div class="contacts-right-side">
             <h2 class="contacts-title">Контакты</h2>
             <address class="address">
@@ -458,6 +480,40 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
+          <div class="modal-form-group">
+            <label class="modal-form-label" for="name">
+              <svg class="form-icon">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>Имя</label>
+          <input class="modal-form-input" type="text" name="user-name" id="name">
+          </div>
+          <div class="modal-form-group">
+            <label class="modal-form-label" for="phone">
+              <svg class="form-icon">
+                <use href="./images/icons.svg#icon-mobile"></use>
+              </svg>Телефон</label>
+          <input class="modal-form-input" type="tel" name="user-phone" id="phone">
+          </div>
+          <div class="modal-form-group">
+            <label class="modal-form-label" for="mail">
+              <svg class="form-icon">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>Почта</label>
+          <input class="modal-form-input" type="email" name="user-mail" id="mail">
+          </div>
+          <div class="modal-form-group">
+            <label class="modal-form-label" for="comment">Комментарий</label>
+          <textarea class="modal-form-comment" name="comment" id="comment" rows="5"></textarea>
+          </div>
+          <div class="modal-form-group">
+            <input type="checkbox" name="checkbox" id="checkbox">
+          <label for="checkbox">Соглашаюсь с рассылкой и принимаю <a class="link-agreement" href="">Условия договора</a>
+</label>
+          </div>
+<button class="modal-form-btn" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
 
