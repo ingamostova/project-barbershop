@@ -1,0 +1,25 @@
+@import './utils/basic';
+
+
+// Стилізація хедеру
+
+@import './components/header/header';
+@import './components/header/logo';
+@import './components/header/nav';
+@import './components/header/contacts';
+@import './components/header/button';
+
+// Стилізація мейну
+
+// Герой
+@import './components/main/hero/hero';
+@import './components/main/hero/left-side';
+@import './components/main/hero/right-side';
+@import './components/main/hero/pagination';
+@import './components/main/hero/slider';
+
+// Про нас
+@import './components/main/about/about';
+
+// Прайс
+@import './components/main/price/price';

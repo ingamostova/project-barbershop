@@ -18,6 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body data-page>
@@ -507,9 +508,15 @@
             <label class="modal-form-label" for="comment">Комментарий</label>
           <textarea class="modal-form-comment" name="comment" id="comment" rows="5"></textarea>
           </div>
-          <div class="modal-form-group">
-            <input type="checkbox" name="checkbox" id="checkbox">
-          <label for="checkbox">Соглашаюсь с рассылкой и принимаю <a class="link-agreement" href="">Условия договора</a>
+          <div class="modal-form-group checkbox--agree">
+            <input class="checkbox-input visuaaly-hidden" type="checkbox" name="checkbox" id="checkbox">
+          <label class="checkbox-agreement" for="checkbox">
+            <span class="checkbox--uncheck">
+              <svg class="checkbox-icon">
+                <use href="./images/icons.svg#icon-checkmark"></use>
+              </svg>
+            </span>
+            Соглашаюсь с рассылкой и принимаю <a class="link-agreement" href="">Условия договора</a>
 </label>
           </div>
 <button class="modal-form-btn" type="submit">Отправить</button>

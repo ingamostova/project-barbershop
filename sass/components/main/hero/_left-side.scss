@@ -1,0 +1,38 @@
+.left-side {
+  flex-basis: 100px;
+  display: flex;
+  align-items: flex-end;
+  max-width: 100px;
+}
+
+.hero-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transform: rotate(-90deg) translateY(27px);
+  transform-origin: top left;
+}
+
+.hero-list::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: var(--title-color);
+}
+
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--title-color);
+
+  transition: color 300ms ease-in-out;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-color);
+}

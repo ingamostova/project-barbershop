@@ -1,0 +1,14 @@
+.hero-section {
+  /* outline: 1px solid red; */
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+.hero-container {
+  display: flex;
+}
