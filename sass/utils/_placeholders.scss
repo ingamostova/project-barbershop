@@ -1,0 +1,22 @@
+%button {
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+%submit-btn {
+  display: block;
+  padding: 12px 38px;
+}
+
+%online-btn {
+  padding: 12px 20px;
+  transition: background-color 300ms ease-in-out;
+}
+

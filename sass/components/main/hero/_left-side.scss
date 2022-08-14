@@ -11,17 +11,18 @@
   gap: 40px;
   transform: rotate(-90deg) translateY(27px);
   transform-origin: top left;
+
+  &::before {
+    @include before();
+    // content: "";
+    // display: block;
+    // width: 60px;
+    // height: 1px;
+    background-color: var(--title-color);
+  }
 }
 
-.hero-list::before {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 1px;
-  background-color: var(--title-color);
-}
-
-.hero-link {
+.hero-list__link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -30,9 +31,9 @@
   color: var(--title-color);
 
   transition: color 300ms ease-in-out;
-}
 
-.hero-link:hover,
-.hero-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

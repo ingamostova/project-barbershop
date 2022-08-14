@@ -3,7 +3,7 @@
   padding-bottom: 130px;
 }
 
-.about-container {
+.container--about {
   display: flex;
 }
 
@@ -12,11 +12,11 @@
   margin-right: 64px;
 }
 
-.about-list-item:nth-child(1) {
+.about-list__item:nth-child(1) {
   margin-right: 30px;
 }
 
-.about-text-container {
+.about-container {
   flex-basis: 500px;
 }
 
@@ -57,16 +57,8 @@
   margin-bottom: 40px;
 }
 
-.about-btn {
-  border: 1px solid var(--accent-color);
-  border-radius: 25px;
-
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+.btn--light-mode {
+  @extend %button;
 
   color: var(--title-color);
-  background-color: transparent;
 }

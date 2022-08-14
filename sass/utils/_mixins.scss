@@ -1,0 +1,6 @@
+@mixin before($margin-right) {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+}

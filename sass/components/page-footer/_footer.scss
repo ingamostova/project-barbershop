@@ -1,0 +1,33 @@
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.container--footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--secondary-text-color);
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+}
+
+.footer-list::before {
+  @include before(40px);
+  background-color: var(--title-color);
+}
+
+.footer-list__item:not(:last-child) {
+  margin-right: 40px;
+}

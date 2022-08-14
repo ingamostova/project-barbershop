@@ -66,20 +66,31 @@ img {
 .features-subtitle::before,
 .team-subtitle::before,
 .portfolio-text::before {
-  margin-right: 20px;
-  display: block;
-  content: "";
-  width: 60px;
-  height: 1px;
+  @include before(20px);
   background-color: var(--title-color);
 }
 
 .price-subtitle::before,
 .hero-subtitle::before {
-  margin-right: 20px;
-  display: block;
-  content: "";
-  width: 60px;
-  height: 1px;
+  @include before(20px);
   background-color: rgba(157, 164, 189, 0.6);
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.visuaaly-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  margin: -1px;
 }

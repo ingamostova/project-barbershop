@@ -1,4 +1,6 @@
 @import './utils/basic';
+@import './utils/placeholders';
+@import './utils/mixins';
 
 
 // Стилізація хедеру
@@ -23,3 +25,32 @@
 
 // Прайс
 @import './components/main/price/price';
+
+// Переваги
+@import './components/main/features/features-left-side.scss';
+@import './components/main/features/features-right-side';
+
+// Наші майстри
+@import './components/main/team/team-members';
+@import './components/main/team/members-explain';
+
+// Портфоліо
+@import './components/main/portfolio/portfolio-picture';
+@import './components/main/portfolio/overlay';
+
+// Контакти
+@import './components/main/contacts/general';
+@import './components/main/contacts/form';
+@import './components/main/contacts/button';
+@import './components/main/contacts/contacts';
+@import './components/main/contacts/time';
+
+// Футер
+@import './components/page-footer/footer';
+
+// Модалка
+@import './components/main/modal/backdrop';
+@import './components/main/modal/modal';
+@import './components/main/modal/buttons';
+@import './components/main/modal/form';
+@import './components/main/modal/checkbox';

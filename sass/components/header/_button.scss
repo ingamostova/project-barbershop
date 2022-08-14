@@ -1,26 +1,18 @@
-.header-btn {
+.btn--dark-mode {
   max-width: 200px;
   height: 40px;
-  border: 1px solid var(--accent-color);
-  border-radius: 25px;
 
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+  @extend %button;
 
   color: #ffffff;
-  background-color: transparent;
 }
 
 .online-btn {
-  padding: 12px 20px;
-  transition: background-color 300ms ease-in-out;
-}
+  @extend %online-btn;
 
-.online-btn:hover,
-.online-btn:focus {
-  background-color: var(--accent-color);
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    cursor: pointer;
+  }
 }

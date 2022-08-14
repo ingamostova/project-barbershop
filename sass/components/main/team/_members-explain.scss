@@ -1,0 +1,61 @@
+.staff-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.staff-name {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+
+  color: var(--title-color);
+}
+
+.staff-position {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  transition: transform 300ms ease-in-out;
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  transform: scale(1.2);
+}
+
+.social-list__link:hover .social-icon,
+.social-list__link:focus .social-icon {
+  fill: var(--accent-color);
+  transform: scale(1.2);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  transition: fill 300ms ease-in-out, transform 300ms ease-in-out;
+}

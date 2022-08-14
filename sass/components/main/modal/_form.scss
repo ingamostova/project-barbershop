@@ -1,0 +1,44 @@
+.form-title {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.modal-form-group:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.modal-form-group {
+  position: relative;
+}
+
+.modal-form-label {
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
+  padding-left: 5px;
+}
+
+.modal-form-input,
+.modal-form-comment {
+  width: 100%;
+  border: 1px solid #ff6c00;
+  padding: 10px;
+  padding-left: 50px;
+  border-radius: 5px;
+  outline: transparent;
+}
+
+.form-icon {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.modal-form-comment {
+  padding-left: 15px;
+  resize: none;
+}

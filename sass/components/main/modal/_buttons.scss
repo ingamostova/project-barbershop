@@ -1,0 +1,43 @@
+.modal-btn--close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  border: 1px solid var(--accent-color);
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 250ms ease-in-out;
+}
+
+.modal-btn--close:hover,
+.modal-btn--close:focus {
+  background-color: var(--accent-color);
+}
+
+.modal-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.modal-btn--submit {
+  @extend %submit-btn;
+  margin-right: auto;
+  margin-left: auto;
+
+  @extend %button;
+
+  color: var(--title-color);
+  transition: background-color 250ms ease-in-out;
+}
+
+.modal-btn--submit:hover,
+.modal-btn--submit:focus {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
