@@ -18,12 +18,12 @@
 .portfolio-list__item {
   position: relative;
   overflow: hidden;
-}
 
-.portfolio-list__item:not(:last-child) {
-  margin-right: 30px;
-}
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 
-.portfolio-list__item:hover .overlay {
-  transform: translateY(0);
+  &:hover .overlay {
+    transform: translateY(0);
+  }
 }

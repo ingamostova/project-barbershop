@@ -13,11 +13,11 @@
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 250ms ease-in-out;
-}
 
-.modal-btn--close:hover,
-.modal-btn--close:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .modal-icon {
@@ -34,10 +34,10 @@
 
   color: var(--title-color);
   transition: background-color 250ms ease-in-out;
-}
 
-.modal-btn--submit:hover,
-.modal-btn--submit:focus {
-  background-color: var(--accent-color);
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    cursor: pointer;
+  }
 }

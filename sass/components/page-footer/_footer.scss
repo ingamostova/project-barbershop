@@ -21,11 +21,11 @@
 .footer-list {
   display: flex;
   align-items: center;
-}
 
-.footer-list::before {
+  &::before {
   @include before(40px);
   background-color: var(--title-color);
+}
 }
 
 .footer-list__item:not(:last-child) {

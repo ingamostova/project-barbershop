@@ -13,11 +13,7 @@
   transform-origin: top left;
 
   &::before {
-    @include before();
-    // content: "";
-    // display: block;
-    // width: 60px;
-    // height: 1px;
+    @include before(20px);
     background-color: var(--title-color);
   }
 }

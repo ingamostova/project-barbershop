@@ -5,12 +5,11 @@
   text-align: center;
 }
 
-.modal-form-group:not(:last-child) {
-  margin-bottom: 12px;
-}
-
 .modal-form-group {
   position: relative;
+  &:not(:last-child) {
+  margin-bottom: 12px;
+}
 }
 
 .modal-form-label {

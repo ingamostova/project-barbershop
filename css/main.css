@@ -1,4 +1,27 @@
 @charset "UTF-8";
+.modal-btn--submit, .contacts-btn, .btn--light-mode, .btn--dark-mode {
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.modal-btn--submit, .contacts-btn {
+  display: block;
+  padding: 12px 38px;
+}
+
+.online-btn {
+  padding: 12px 20px;
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+}
+
 /* Палітра кольорів */
 /* main text color -  #555555;
 secondary text color - #9DA4BD;
@@ -66,11 +89,21 @@ img {
 .features-subtitle::before,
 .team-subtitle::before,
 .portfolio-text::before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
   background-color: var(--title-color);
 }
 
 .price-subtitle::before,
 .hero-subtitle::before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
   background-color: rgba(157, 164, 189, 0.6);
 }
 
@@ -91,41 +124,6 @@ img {
   -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   margin: -1px;
-}
-
-.modal-btn--submit, .contacts-btn, .btn--light-mode, .btn--dark-mode {
-  border: 1px solid var(--accent-color);
-  border-radius: 25px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  text-align: center;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  background-color: transparent;
-}
-
-.modal-btn--submit, .contacts-btn {
-  display: block;
-  padding: 12px 38px;
-}
-
-.online-btn {
-  padding: 12px 20px;
-  -webkit-transition: background-color 300ms ease-in-out;
-  transition: background-color 300ms ease-in-out;
-}
-
-.time::before, .about-paragraph::before,
-.features-subtitle::before,
-.team-subtitle::before,
-.portfolio-text::before, .price-subtitle::before,
-.hero-subtitle::before {
-  margin-right: 20px;
-  display: block;
-  content: "";
-  width: 60px;
-  height: 1px;
 }
 
 .header {
@@ -275,12 +273,12 @@ img {
   -webkit-transform-origin: top left;
           transform-origin: top left;
 }
-
 .hero-list::before {
-  content: "";
   display: block;
+  content: "";
   width: 60px;
   height: 1px;
+  margin-right: 20px;
   background-color: var(--title-color);
 }
 
@@ -293,9 +291,7 @@ img {
   -webkit-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;
 }
-
-.hero-list__link:hover,
-.hero-list__link:focus {
+.hero-list__link:hover, .hero-list__link:focus {
   color: var(--accent-color);
 }
 
@@ -356,11 +352,9 @@ img {
   height: 2px;
   background-color: var(--secondary-text-color);
 }
-
 .pagination__item:last-child {
   margin-bottom: 0;
 }
-
 .pagination__item.active {
   width: 18px;
   background-color: var(--background-color);
@@ -394,7 +388,6 @@ img {
   border-bottom: 1px solid rgba(157, 164, 189, 0.6);
   cursor: pointer;
 }
-
 .hero-controls.active {
   color: var(--background-color);
   border-bottom: 1px solid var(--background-color);
@@ -540,7 +533,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-
 .price-text:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -577,7 +569,6 @@ img {
   text-align: center;
   background-color: #f7f7f7;
 }
-
 .features-list__item:nth-child(2n+1) {
   margin-right: 30px;
   margin-bottom: 30px;
@@ -597,7 +588,6 @@ img {
   letter-spacing: 0.05em;
   color: var(--title-color);
 }
-
 .features-number::after {
   content: "+";
   font-weight: 600;
@@ -751,9 +741,7 @@ img {
   transition: transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
-
-.social-list__link:hover,
-.social-list__link:focus {
+.social-list__link:hover, .social-list__link:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -772,6 +760,11 @@ img {
   transition: fill 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
   transition: fill 300ms ease-in-out, transform 300ms ease-in-out;
   transition: fill 300ms ease-in-out, transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+.social-list__link:hover .social-icon, .social-list__link:focus .social-icon {
+  fill: var(--accent-color);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .portfolio-text {
@@ -800,11 +793,9 @@ img {
   position: relative;
   overflow: hidden;
 }
-
 .portfolio-list__item:not(:last-child) {
   margin-right: 30px;
 }
-
 .portfolio-list__item:hover .overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -1057,6 +1048,11 @@ img {
   color: var(--background-color);
 }
 .time::before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
   background-color: rgba(157, 164, 189, 0.4);
 }
 
@@ -1100,13 +1096,12 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .footer-list::before {
-  margin-right: 40px;
   display: block;
   content: "";
   width: 60px;
   height: 1px;
+  margin-right: 40px;
   background-color: var(--title-color);
 }
 
@@ -1125,7 +1120,6 @@ img {
   -webkit-transition: opacity 400ms ease-in-out, visibility 400ms ease-in-out;
   transition: opacity 400ms ease-in-out, visibility 400ms ease-in-out;
 }
-
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -1148,7 +1142,6 @@ img {
   transition: transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
-
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.7);
           transform: translate(-50%, -50%) scale(0.7);
@@ -1177,9 +1170,7 @@ img {
   -webkit-transition: background-color 250ms ease-in-out;
   transition: background-color 250ms ease-in-out;
 }
-
-.modal-btn--close:hover,
-.modal-btn--close:focus {
+.modal-btn--close:hover, .modal-btn--close:focus {
   background-color: var(--accent-color);
 }
 
@@ -1195,9 +1186,7 @@ img {
   -webkit-transition: background-color 250ms ease-in-out;
   transition: background-color 250ms ease-in-out;
 }
-
-.modal-btn--submit:hover,
-.modal-btn--submit:focus {
+.modal-btn--submit:hover, .modal-btn--submit:focus {
   background-color: var(--accent-color);
   cursor: pointer;
 }
@@ -1209,12 +1198,11 @@ img {
   text-align: center;
 }
 
-.modal-form-group:not(:last-child) {
-  margin-bottom: 12px;
-}
-
 .modal-form-group {
   position: relative;
+}
+.modal-form-group:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .modal-form-label {

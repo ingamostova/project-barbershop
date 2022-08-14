@@ -69,10 +69,10 @@
   letter-spacing: 0.02em;
 
   color: var(--secondary-text-color);
-}
 
-.price-text:not(:last-child) {
-  margin-bottom: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .price-btn {

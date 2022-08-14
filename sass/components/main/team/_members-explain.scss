@@ -41,11 +41,11 @@
   border-radius: 50%;
   background-color: var(--background-color);
   transition: transform 300ms ease-in-out;
-}
 
-.social-list__link:hover,
-.social-list__link:focus {
-  transform: scale(1.2);
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
 }
 
 .social-list__link:hover .social-icon,
@@ -58,4 +58,10 @@
   width: 20px;
   height: 20px;
   transition: fill 300ms ease-in-out, transform 300ms ease-in-out;
+
+  .social-list__link:hover &,
+  .social-list__link:focus & {
+    fill: var(--accent-color);
+    transform: scale(1.2);
+  }
 }
