@@ -1,3 +1,9 @@
+.features--right-side {
+  @media screen and (min-width: 768px) {
+    width: 500px;
+  }
+}
+
 .features-subtitle {
   display: flex;
   align-items: center;
@@ -25,8 +31,8 @@
 }
 
 .features-text {
-  width: 500px;
-  height: 90px;
+  // width: 500px;
+  // height: 90px;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;

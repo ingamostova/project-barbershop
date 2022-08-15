@@ -1,13 +1,29 @@
 .container--features {
   display: flex;
+  
+  @media screen and (max-width: 1199px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .features-list {
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
-  margin: 0 auto;
   width: 370px;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 44px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+      align-self: flex-end;
+      width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto;
+  }
 }
 
 .features-list__item {
@@ -20,6 +36,10 @@
   &:nth-child(2n + 1) {
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width:1199px) {
+  width: 210px;
 }
 }
 
@@ -45,7 +65,8 @@
 }
 
 .features-explain {
-  width: 122px;
+  margin: 0 auto;
+  // width: 122px;
   height: 30px;
   font-weight: 600;
   font-size: 11px;

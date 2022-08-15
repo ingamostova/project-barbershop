@@ -95,15 +95,23 @@
       <div class="container container--about">
         <ul class="about-list">
           <li class="about-list__item">
-            <img src="./images/img1.jpg" alt="Бритье бороды" width="270" />
+            <picture>
+              <source srcset="./images/about/about1-desktop@1x.jpg 1x, ./images/about/about1-desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
+              <source srcset="./images/about/about1-tablet@1x.jpg 1x, ./images/about/about1-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+              <img src="./images/about/about1-tablet@1x.jpg" alt="Бритье бороды" />
+            </picture>
           </li>
           <li class="about-list__item">
-            <img src="./images/img2.jpg" alt="Бритье опасной бритвой" width="270" />
+            <picture>
+              <source srcset="./images/about/about2-desktop@1x.jpg 1x, ./images/about/about2-desktop@2x.jpg 2x" media="(min-width: 1200px)"/>
+              <source srcset="./images/about/about2-tablet@1x.jpg 1x, ./images/about/about2-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+              <img src="./images/about/about2-tablet@1x.jpg" alt="Бритье опасной бритвой" />
+            </picture>
           </li>
         </ul>
         <div class="about-container">
           <p class="about-paragraph">О НАС</p>
-          <h2 class="about-title">Лучший Барбершоп твоего города</h2>
+          <h2 class="about-title">Лучший Барбершоп твоего&nbsp;города</h2>
           <h3 class="about-subtitle">
             Если ты хочешь добавить в свой образ больше уверенности – тебе
             точно к нам.
@@ -174,7 +182,7 @@
             <p class="features-explain">Подарков постоянным клиентам</p>
           </li>
         </ul>
-        <div>
+        <div class="features--right-side">
           <p class="features-subtitle">старая традиционная школа</p>
           <h2 class="features-title">Почему приходят именно к нам?</h2>
           <p class="features-text">

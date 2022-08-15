@@ -46,15 +46,35 @@ ul {
 }
 
 .container {
-  width: 1200px;
+  // width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  // padding-right: 15px;
+  // padding-left: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-right: 39px;
+    padding-left: 39px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .link {
@@ -77,8 +97,20 @@ img {
 }
 
 .section {
-  padding-top: 130px;
+  @media screen and (max-width: 767px) {
+    padding-top: 84px;
+  padding-bottom: 84px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+  padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 130px;
   padding-bottom: 130px;
+  }
 }
 
 .visuaaly-hidden {
