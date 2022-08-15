@@ -13,17 +13,30 @@
 
 .portfolio-list {
   display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .portfolio-list__item {
   position: relative;
   overflow: hidden;
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-
   &:hover .overlay {
     transform: translateY(0);
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px * 3) / 4);
   }
 }

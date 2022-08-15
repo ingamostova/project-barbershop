@@ -2,6 +2,13 @@
   background-color: var(--secondary-background-color);
 }
 
+.container--team {
+  @media screen and (min-width: 768px) and (max-width:1199px) {
+    padding-right: 159px;
+    padding-left: 159px;
+  }
+}
+
 .team-subtitle {
   display: flex;
   align-items: center;
@@ -27,9 +34,15 @@
 }
 
 .team-list {
-  display: flex;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .team-list__item:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 34px;
+  }
 }
