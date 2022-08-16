@@ -16,11 +16,19 @@
   letter-spacing: 0.2em;
 
   color: var(--secondary-text-color);
+
+  @media screen and (max-width: 767px) {
+    margin-top: 20px;
+  margin-right: 20px;
+  }
 }
 
 .footer-list {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    align-self: flex-start;
+  }
 
   &::before {
   @include before(40px);

@@ -1,5 +1,7 @@
 .contacts-right-side {
+  @media screen and (min-width: 1200px) {
   padding-left: 100px;
+  }
 }
 
 .contacts-title {
@@ -11,6 +13,35 @@
   letter-spacing: 0.05em;
 
   color: var(--background-color);
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.container--address-time {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: column;
+      gap: 70px;
+    }
+  }
+}
+
+.container--address {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: 330px;
+  }
+  
+}
+
+.container--time {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: 330px;
+  }
 }
 
 .address-list {
@@ -41,5 +72,9 @@
 }
 
 .address {
-  margin-bottom: 70px;
+  
+  @media screen and (max-width: 767px) {
+    margin-bottom: 44px;
+  }
+
 }
