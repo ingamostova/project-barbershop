@@ -2,6 +2,10 @@
   position: absolute;
   top: 50%;
   right: 0;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .pagination__item {

@@ -3,10 +3,36 @@
   max-width: 1280px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../images/hero-bg-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: right center;
-  background-size: contain;
+  // background-size: contain;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero-bg-mobile@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/hero-bg-tablet@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero-bg-tablet@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/hero-bg-desktop@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero-bg-desktop@2x.jpg);
+    }
+  }
 }
 
 .container--hero {
