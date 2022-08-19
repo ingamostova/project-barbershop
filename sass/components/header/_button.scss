@@ -16,3 +16,28 @@
     cursor: pointer;
   }
 }
+
+.header-btn {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.menu-btn {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    .menu-btn__icon {
+      fill: var(--accent-color);
+    }
+  }
+}
+
+.menu-btn__icon {
+  fill: var(--background-color);
+  transition: fill 250ms ease-in-out;
+}
