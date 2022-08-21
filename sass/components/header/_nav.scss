@@ -8,6 +8,11 @@
 .nav-list {
   display: flex;
   align-items: center;
+  gap: 24px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 40px;
+  }
 }
 
 .nav-list__item {
@@ -18,9 +23,9 @@
 
   color: var(--background-color);
 
-  &:not(:last-child) {
-    margin-right: 40px;
-  }
+  // &:not(:last-child) {
+  //   margin-right: 40px;
+  // }
 }
 
 .current {
